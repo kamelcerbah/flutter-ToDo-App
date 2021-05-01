@@ -27,13 +27,13 @@ class _TodoListState extends State<TodoList> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text('Todo List 1')),
+      appBar: new AppBar(title: new Text('Todo List')),
       //generating the todo list
       body: _buildTodoList(),
 
       floatingActionButton: new FloatingActionButton(
           //generate screen to add ToDo item to the _todoItems
-          onPressed: _addToDoItemScreen,
+          onPressed: addToDoItemScreen,
           tooltip: 'Add task',
           child: new Icon(Icons.add)),
     );
@@ -54,7 +54,7 @@ class _TodoListState extends State<TodoList> {
     return new ListTile(title: new Text(todoText), onTap: () => _promptRemoveTodoItem(index));
   }
 
-  void _addToDoItemScreen() {
+  void addToDoItemScreen() {
     // Push this page onto the stack
     Navigator.of(context).push(
         // MaterialPageRoute will automatically animate the screen entry, as well

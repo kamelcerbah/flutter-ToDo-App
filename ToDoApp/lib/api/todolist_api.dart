@@ -9,7 +9,7 @@ class TodoListApi {
 
   Future<File> get getLocalFile async {
     String path = await getLocalPath;
-    return File('$path/counter.txt');
+    return File('$path/todoList.txt');
   }
 
   Future<File> writeTodo(String txt) async {

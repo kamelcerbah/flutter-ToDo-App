@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: new Text("About Page 404"),
-    );
+    return new Scaffold(
+        appBar: new AppBar(title: new Text('About page')),
+        body: new Text("About page under construction "));
   }
 }
